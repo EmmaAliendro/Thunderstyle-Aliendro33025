@@ -4,69 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THUNDERSTYLE</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
 </head>
-<body class="maquetado">
-    <header>
-        <nav>
-            <ul class="menu_nave">
-                <div class="logo_thunder"><a class="links_internos" href="./index.html">THUNDERSTYLE</a></div>
-                <li class="search"><input type="text" placeholder="buscar" required class="buscador"></li>
-                <li><a class="links_internos" href="./HTML/ayuda.html" >Ayuda</a></li>
-                <li><a class="links_internos" href="./HTML/contacto.html">Contacto</a></li>
-                <li><a class="links_internos" href="./HTML/micuenta.html">Mi cuenta</a></li>
-            </ul>
+<body>
+    <!--Barra de navegacion-->
+    <section class="barraNavegacion">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">THUNDERSTYLE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./HTML/ayuda.html">Ayuda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./HTML/Contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mi cuenta</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
         </nav>
-    </header>
+    </section>
+    <!-- barra categoria de productos-->
     <section class="categ_productos">
-        <ul>
+        <ul class="categ2">
             <li class="nav_2"><a class="links_internos" href="./HTML/electro.html" >ELECTRO</a></li>
             <li class="nav_2"><a class="links_internos" href="./HTML/indumentaria.html">INDUMENTARIA</a></li>
             <li class="nav_2"><a class="links_internos" href="./HTML/deportes.html">DEPORTES</a></li>
         </ul>
     </section>
-
-    <!--Barra de navegacion para pantallas chicas-->
-    <!--Aqui irian iconos caracteristicos y generales enlazados en vez de palabras-->
-    <section class="nav_movile">
-        <div class="iconoIndex"><a href="./index.html">Inicio</a></div>
-        <div class="iconos">Elec.</div>
-        <div class="iconos">Indu.</div>
-        <div class="iconos">Dep.</div>
-        <div class="iconos"><a href="./HTML/ayuda.html">Ayuda</a></div>
-        <div class="iconos">Cont.</div>
-        <div class="iconos">Mi.</div>
-    </section>
-    <section class="seccion1">
-        <div class="slider">
-            <ul>
-                <li><img src="../IMG/Auriculares T500 WH_1.jpg" height="400px"></li>
-                <li><img src="../IMG/D_NQ_NP_653244-MCO43763172265_102020-O.webp" height="400px"></li>
-                <li><img src="../IMG/Protein-Shakes-to-Supplement-Your-Workouts.jpg.crdownload" height="400px"></li>
-                <li><img src="../IMG/better_for_it_nike_5495.jpg" height="400px"></li>
-            </ul>
+    <!--Slider-->
+    <section>
+        <div class="imagen">
+            <img src="./IMG/better_for_it_nike_5495.jpg" alt="" width="1000" height="500">
         </div>
     </section>
-
-    <!--Lista de productos para pantallas chicas-->
-    <section class="destacadosMovile">
-        <ul>LO MEJOR EN ELECTRO
-            <li><img class="destadosIndex" src="../IMG/AURISAZUL1.jpg" width="200" height="200"></li>
-            <li><img class="destadosIndex" src="../IMG/Parlante.jpg" width="200" height="200"></li>
-        </ul>
-        <ul>LO MEJOR EN INDUMENTARIA
-            <li><img class="destadosIndex" src="../IMG/jogger_w.jpg" width="200" height="200"></li>
-            <li><img class="destadosIndex" src="../IMG/NI_CU5525-010-1.jpg" width="200" height="200"></li>
-        </ul>
-
-
-
-    </section>
-    
+    <!--Destacados-->
     <section class="seccion2">
         <h1>¡DESTACADOS PARA TI!</h1>
         <section class="lista_destacado">
@@ -74,19 +69,32 @@
             <div class="indumentariaH">LO MEJOR EN INDUMENTARIA</div>
         </section>
         <section class="productos">
-            <div><img class="destadosIndex" src="../IMG/AURISAZUL1.jpg" width="200" height="200"></div>
-            <div><img class="destadosIndex" src="../IMG/Parlante.jpg" width="200" height="200"></div>
-            <div><img class="destadosIndex" src="../IMG/jogger_w.jpg" width="200" height="200"></div>
-            <div><img class="destadosIndex" src="../IMG/NI_CU5525-010-1.jpg" width="200" height="200"></div>
+            <div class="card"><img class="destadosIndex" src="./IMG/AURISAZUL1.jpg" width="200" height="200">
+                <h5 class="titulosCards">Audifonos Only BT</h5>
+                <a href="#" class="btn btn-primary">Pedir</a> 
+            </div>           
+            <div class="card"><img class="destadosIndex" src="./IMG/Parlante.jpg" width="200" height="200">
+                <h6 class="titulosCards">Parlante Sony</h6>
+                <a href="#" class="btn btn-primary">Pedir</a> 
+            </div>
+            <div class="card"><img class="destadosIndex" src="./IMG/jogger_w.jpg" width="200" height="200">
+                <h7 class="titulosCards">Jogger Niker Mujer</h7>
+                <a href="#" class="btn btn-primary">Pedir</a> 
+            </div>
+            <div class="card"><img class="destadosIndex" src="./IMG/NI_CU5525-010-1.jpg" width="200" height="200">
+                <h8 class="titulosCards"> Jogger Nike Hombre</h8>
+                <a href="#" class="btn btn-primary">Pedir</a> 
+            </div>
         </section>
     </section>
-
+    <!--Pie de pagina-->
     <section class="cuadro_footer">
         <Footer class="pie">©THUNDERSTYLE LATIN AMERICA. TODOS LOS DERECHOS RESERVADOS
             TELEFONO 123456789
             thundersyle@gmail.com
         </Footer>
     </section>
-    
+
+    <script src="./JS/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,161 @@
+@import "variables";
+/*Barras de navegacion*/
+
+/*Links de navegacion*/
+.links_internos{
+    text-decoration:none;
+    color: white;
+}
+/*barra de categoria*/
+.navbar-brand{
+    font-family: 'Bangers', cursive;
+    font-size: 30px;
+}
+.categ_productos{
+        background-color: $color-barcat;
+        height: 60px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        grid-area: head2;
+        .nav_2{
+            display: inline;
+            margin: 50px;
+            font-family: $font-family;
+        }
+    }
+    
+/*Footer*/
+.cuadro_footer{
+    background-color: rgb(8, 8, 8);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    margin-top: 100px;
+    grid-area: footer;
+    footer{
+        font-size: small;
+        color:white;
+        margin-left: 20px;
+        margin-bottom: 60px;
+    }
+    .pie{
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+}
+
+.visible{
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.gridAyuda{
+    height: 700px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(220, 236, 243);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "ayuda ayuda";
+}
+.botonesAyuda{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    color:black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: $size-botonesfont;
+    background-color:rgb(255, 255, 255);
+    border-style: groove;
+    border: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.h1ayuda{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    grid-area: ayuda;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+@media screen and (max-width: 610px){
+    .imagen{
+        display: none;
+    }
+    .productosElec{
+        display: flex;
+        flex-direction: column;
+    }
+    .productos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .lista_destacado{
+        display: none;
+    }
+    .h1ayuda{
+        margin-top: 10px;
+    }
+    .gridAyuda{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+    .botonesAyuda{
+        font-size: 20px;
+    }
+    .categ_productos{
+        display: grid;
+        height: 100px;
+        
+    }
+    .categ2{
+        
+        align-items: center;
+        justify-content: left;
+    }
+    
+}
+    @media screen and (max-width: 768px){
+        .productosElec{
+            display: flex;
+            flex-direction: column;
+        }
+        .cuadro_footer{
+            height: 100%;
+        }
+
+    }
+
+$botones: {
+    white: rgb(255, 255, 255)
+
+
+}
+@each $item, $color in $botones{
+    .color-#{$item} {
+        background-color: $color;
+    }
+
+}

@@ -4,46 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="DEPORTE, SUPLEMENTOS, ELECTRO, AURICULARES, INDUMENTARIA, ACCESORIOS, DEPORTIVOS">
+    <meta name="description" content="Compre productos para el deporte e indumentaria, de primeras marcas, al instante y con envio gratis">
     <title>Contacto|Thunderstyle</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="menu_nave">
-                <div class="logo_thunder"><a class="links_internos" href="./index.html">THUNDERSTYLE</a></div>
-                <li class="search"><input type="text" placeholder="buscar" required class="buscador"></li>
-                <li><a class="links_internos" href="./ayuda.html">Ayuda</a></li>
-                <li><a class="links_internos" href="./contacto.html">Contacto</a></li>
-                <li><a class="links_internos" href="./micuenta.html">Mi cuenta</a></li>
-            </ul>
+    <!--Barra de navegacion-->
+    <section class="barraNavegacion">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">THUNDERSTYLE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./ayuda.html">Ayuda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mi cuenta</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
         </nav>
-    </header>
+    </section>
+    <!--Segunda barra a partir de 600px-->
     <section class="categ_productos">
         <ul>
-            <li class="nav_2"><a class="links_internos" href="./electro.html">ELECTRO</a></li>
-            <li class="nav_2"><a class="links_internos" href="./indumentaria.html">INDUMENTARIA</a></li>
-            <li class="nav_2"><a class="links_internos" href="./deportes.html">DEPORTES</a></li>
+            <li class="nav_2"><a class="links_internos" href="./electro.html" >ELECTRO</a></li>
+            <li class="nav_2"><a class="links_internos" href="./HTML/indumentaria.html">INDUMENTARIA</a></li>
+            <li class="nav_2"><a class="links_internos" href="./HTML/deportes.html">DEPORTES</a></li>
         </ul>
     </section>
-    <section class="contacto1">
-        <div class="lorem">
-            <p class="centroAtencion">Bienvenido a nuestro centro de atencion al cliente</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus similique voluptates maxime corporis perspiciatis corrupti eum, vitae facere sint obcaecati recusandae earum quas. Ratione, quam et? Eveniet architecto reprehenderit amet.</p>
-        </div>
-    </section>
-    
 
-
-
-    <section class="cuadro_footer">
-        <Footer class="pie">©THUNDERSTYLE LATIN AMERICA. TODOS LOS DERECHOS RESERVADOS
-            TELEFONO 123456789
-            thundersyle@gmail.com
-        </Footer>
-    </section>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
 </body>
 </html>

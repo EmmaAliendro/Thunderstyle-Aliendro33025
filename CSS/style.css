@@ -1,83 +1,24 @@
+/*Barras de navegacion*/
 
-/*Barras de menu*/
-nav{
-    background-color: rgb(65, 65, 228);
-    height: 70px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items:center;
-}
-nav ul div{
-    display: flex;
-    display: inline;
-    justify-content: space-around;
-    align-items: center;
-}
-nav ul li{
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: inline;
-    margin: 70px;
-    justify-content: space-around;
-}
-div{font-family: 'Bangers', cursive;
-    font-size: xx-large;
-    color: white;
-    display: flex;
-    display: inline;
-    justify-content: space-around;
-    align-items: center;
-}
+.navbar-brand{
+    font-family: 'Bangers', cursive;
+    font-size: 30px;
     
+}
 .categ_productos{
     background-color: black;
-    height: 70px;
+    height: 60px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    grid-area: head2;
 }
-section ul li{
+.categ_productos .nav_2{
     display: inline;
     margin: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-/*Slider de publicidad*/
-.slider{
-    width: 500px;
-    height: auto;
-    margin: 50px auto 0;
-    overflow: hidden;
-}
-.slider ul{
-    display: flex;
-    padding: 0px;
-    width: 300%;
-    animation: slider 14s infinite alternate ease-in;
-}
-.slider li{
-    width: 100%;
-    list-style: none;
-}
-.slider img{
-    width: 100%;
-}
-@keyframes slider{
-    0%{margin-left: 0%;}
-    20%{margin-left: 0%;}
-
-    75%{margin-left: -100%;}
-    45%{margin-left: -100%;}
-
-    50%{margin-left: -200%;}
-    75%{margin-left: -200%;}
-
-    80%{margin-left: -300%;}
-    100%{margin-left: -300%;}
 }
 
 /*Links de navegacion*/
@@ -86,7 +27,19 @@ section ul li{
     color: white;
 }
 
-/*Destacados*/
+/*Slider de publicidad*/
+.imagen{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/*Tarjetas de productos*/
+.titulosCards{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+
 h1{
     text-align: center;
     color: rgb(124, 121, 121);
@@ -109,46 +62,12 @@ h1{
     align-items: flex-start;
 }
 
-/*Seccion de Footer*/
-.cuadro_footer{
-    background-color: rgb(8, 8, 8);
-    height: 70px;
-    width: 100%;
-    display: flex;
-    justify-content:flex-start;
-    align-items: flex-start;
-
+.card:hover{
+    transform: scale(1.2);
 }
-footer{
-    font-size: small;
-    color:white;
-    margin-left: 20px;
-    margin-bottom: 60px;
+.btn{
+    font-family: 'Bangers', cursive;
 }
-.pie{
-    margin-top: 40px;
-}
-
-/*Seccion de Indumentaria*/
-.tituloIndumentaria{
-    background-color: rgb(175, 170, 170);
-    height: 80px;
-    width: 100%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.catIndumentaria{
-    margin-left: 30px;
-    color: aliceblue;
-}
-.productosIndu{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
 /*Seccion de Electro*/
 .tituloElectro{
     background-color: rgb(175, 170, 170);
@@ -169,51 +88,29 @@ footer{
     align-items: center;
 }
 
-/*Seccion de Deportes*/
-.tituloDeportes{
-    background-color: rgb(175, 170, 170);
-    height: 80px;
+/*Footer*/
+.cuadro_footer{
+    background-color: rgb(8, 8, 8);
+    height: 70px;
     width: 100%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.catDeportes{
-    margin-left: 30px;
-    color: aliceblue;
-}
-.productosDep{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-/*Contacto*/
-.contacto1{
-    height: 500px;
-    width: 100%;
-    background-image: url(../IMG/mujer-oficinista-tablet.jpg);
-    background-size: cover;
-    display: flex;
-    display: block;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content:flex-start;
+    align-items: flex-start;
+    margin-top: 100px;
+    grid-area: footer;
 
 }
-.centroAtencion{
-    font-size: xx-large;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: block;
-    display: flex;
-    justify-content: flex-start;
+footer{
+    font-size: small;
+    color:white;
+    margin-left: 20px;
+    margin-bottom: 60px;
 }
-.lorem{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: black;
+.pie{
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
-
-/*Maquetado en grid de la pagina de ayuda*/
+/*Seccion de Ayuda*/
 .visible{
     height: auto;
     width: auto;
@@ -263,96 +160,55 @@ footer{
     align-items: center;
     
 }
-
-/*maquetado en grid de index*/
-.maquetado{
-    height: 100vh;
-    width: 100%;
-    display: grid;
-    grid-template-columns:auto ;
-    grid-template-rows:auto;
-}
-
-
-.nav_movile{
-    height: 400px;
-    width: 50px;
-    background-color: rgb(65, 65, 228);
-    display: grid;
-    grid-template-columns: 50px;
-    position: fixed;
-
-
-    
-}
-.iconos{
-    font-size: small;
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border: 1px solid;
-    border-right: none;
-}
-.destacadosMovile{
-    display: flex;
-    flex-direction: column;
-    color: rgb(124, 121, 121);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
-.iconoIndex{
-    font-size: small;
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border: 1px solid;
-    border-right: none;
-}
-
-@media screen and (min-width:768px) {
-    .nav_movile{
+@media screen and (max-width: 610px){
+    .imagen{
         display: none;
     }
-    .destacadosMovile{
-        display: none;
-    }
-    .destacadosMovile{
-        display: none;
-    }
-
-    
-}
-@media screen and (max-width:768px) {
-    .menu_nave{
-        display: none;
-    }
-    .categ_productos{
-        display: none;
-    }
-    nav{
-        display: none;
-    }
-    
-    .destadosIndex{
-        width: 200px;
-        height: 200px;
-    }
-    .seccion2{
-        display: none;
-    }
-    .slider{
-        width: 30px;
-    }
-    .gridAyuda{
-        height: 400px;
-        width: 300px;
-
-    }
-    .botonesAyuda{
-        font-size: 10px;
+    .productosElec{
         display: flex;
+        flex-direction: column;
+    }
+    .productos{
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+    .lista_destacado{
+        display: none;
+    }
+    .h1ayuda{
+        margin-top: 10px;
+    }
+    .gridAyuda{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+    .botonesAyuda{
+        font-size: 20px;
+    }
+    .categ_productos{
+        display: grid;
+        height: 100px;
+        
+    }
+    .categ2{
+        
+        align-items: center;
+        justify-content: left;
+    }
     
-
-
 }
+    @media screen and (max-width: 768px){
+        .productosElec{
+            display: flex;
+            flex-direction: column;
+        }
+        .cuadro_footer{
+            height: 100%;
+        }
+
+    }
+        
+    
